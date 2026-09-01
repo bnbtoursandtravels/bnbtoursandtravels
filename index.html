@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0b0c0e">
+
+<!--
+  ============================================================================
+  B&B Tours and Travels — single-page website
+  ----------------------------------------------------------------------------
+  STILL TO REPLACE BEFORE GOING LIVE (see README.md):
+    https://www.example.com  live domain (canonical, OG, sitemap, robots)
+    GOOGLE_MAPS_API_KEY      in assets/js/main.js  → Places API reviews
+  Phone, WhatsApp and email are set. Base city: Calicut (Kozhikode), Kerala.
+  ============================================================================
+-->
+
+<title>B&amp;B Tours and Travels | Taxi Service &amp; Holiday Packages in Calicut, Kerala</title>
+<meta name="description" content="B&amp;B Tours and Travels offers reliable taxi service in Calicut — airport transfers, railway station pickups, outstation and intercity trips, corporate cabs and Kerala holiday packages. Clean cars, fixed fares, 24/7 booking.">
+<link rel="canonical" href="https://www.example.com/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="B&amp;B Tours and Travels">
+<meta property="og:title" content="B&amp;B Tours and Travels | Taxi Service &amp; Holiday Packages in Calicut">
+<meta property="og:description" content="Airport transfers, outstation trips, corporate cabs and Kerala holiday packages. Clean cars, fixed fares, 24/7 booking.">
+<meta property="og:url" content="https://www.example.com/">
+<meta property="og:image" content="https://www.example.com/assets/img/og-fleet-lineup-1200.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="The B&amp;B Tours and Travels fleet — coach, tempo traveller, sedan, Innova Crysta and Ertiga">
+<meta property="og:locale" content="en_IN">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="assets/img/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="assets/img/logo.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/img/icon-180.png">
+<link rel="manifest" href="site.webmanifest">
+
+<link rel="preload" as="image" href="assets/img/hero-fleet-lineup-1200.webp"
+      imagesrcset="assets/img/hero-fleet-lineup-768.webp 768w, assets/img/hero-fleet-lineup-1200.webp 1200w, assets/img/hero-fleet-lineup-1600.webp 1600w"
+      imagesizes="100vw" fetchpriority="high">
+<link rel="stylesheet" href="assets/css/style.css">
+<!-- scroll-reveal starts elements hidden; without JS they must stay visible.
+     A separate file (rather than an inline <style>) keeps a strict CSP valid. -->
+<noscript><link rel="stylesheet" href="assets/css/no-js.css"></noscript>
+<script src="assets/js/main.js" defer></script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": ["TaxiService", "LocalBusiness"],
+      "@id": "https://www.example.com/#business",
+      "name": "B&B Tours and Travels",
+      "description": "Taxi service, airport and railway station transfers, outstation and intercity trips, corporate cabs and Kerala holiday packages based in Calicut, Kozhikode.",
+      "url": "https://www.example.com/",
+      "telephone": "+919895451666",
+      "email": "bnbtoursandtravels777@gmail.com",
+      "image": "https://www.example.com/assets/img/og-fleet-lineup-1200.jpg",
+      "logo": "https://www.example.com/assets/img/icon-512.png",
+      "priceRange": "₹₹",
+      "currenciesAccepted": "INR",
+      "paymentAccepted": "Cash, UPI, Bank transfer",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Calicut",
+        "addressRegion": "Kerala",
+        "addressCountry": "IN"
+      },
+      "areaServed": [
+        { "@type": "City", "name": "Calicut" },
+        { "@type": "City", "name": "Kozhikode" },
+        { "@type": "City", "name": "Wayanad" },
+        { "@type": "City", "name": "Kannur" },
+        { "@type": "City", "name": "Malappuram" },
+        { "@type": "City", "name": "Thrissur" },
+        { "@type": "City", "name": "Kochi" },
+        { "@type": "State", "name": "Kerala" }
+      ],
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+        "opens": "00:00",
+        "closes": "23:59"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Taxi and travel services",
+        "itemListElement": [
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Taxi service" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Holiday packages" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Airport transfers" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Railway station transfers" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Outstation trips" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Intercity trips" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Corporate taxi services" } }
+        ]
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.example.com/#website",
+      "url": "https://www.example.com/",
+      "name": "B&B Tours and Travels",
+      "publisher": { "@id": "https://www.example.com/#business" },
+      "inLanguage": "en-IN"
+    }
+  ]
+}
+</script>
+</head>
+
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<!-- ========================= HEADER ========================= -->
+<header class="masthead" id="site-header">
+  <div class="shell masthead__inner">
+    <a class="brand" href="#hero" aria-label="B&amp;B Tours and Travels — go to top">
+      <span class="brand__mark" aria-hidden="true">B&amp;B</span>
+      <span class="brand__words">
+        <span class="brand__name">Tours and Travels</span>
+        <span class="brand__tag">Calicut &middot; All Kerala</span>
+      </span>
+    </a>
+
+    <nav class="nav" id="site-nav" aria-label="Main">
+      <ul class="nav__list">
+        <li><a href="#services"><span>Services</span></a></li>
+        <li><a href="#fleet"><span>Fleet</span></a></li>
+        <li><a href="#routes"><span>Destinations</span></a></li>
+        <li><a href="#tours"><span>Tours</span></a></li>
+        <li><a href="#reviews"><span>Reviews</span></a></li>
+        <li><a href="#contact"><span>Contact</span></a></li>
+      </ul>
+    </nav>
+
+    <a class="btn btn--gold masthead__cta" href="tel:+919895451666">
+      <svg class="icon" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.58 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.46.57 3.6a1 1 0 0 1-.25 1z"/></svg>
+      <span>Call now</span>
+    </a>
+
+    <button class="burger" id="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation menu">
+      <span class="burger__bars" aria-hidden="true"></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ========================= HERO ========================= -->
+  <section class="hero" id="hero" aria-labelledby="hero-title">
+    <div class="hero__media">
+      <picture>
+        <source type="image/webp" sizes="(min-width: 1280px) 68vw, 100vw"
+                srcset="assets/img/hero-fleet-lineup-768.webp 768w, assets/img/hero-fleet-lineup-1200.webp 1200w, assets/img/hero-fleet-lineup-1600.webp 1600w">
+        <img class="hero__img" src="assets/img/hero-fleet-lineup-1200.png"
+             srcset="assets/img/hero-fleet-lineup-768.png 768w, assets/img/hero-fleet-lineup-1200.png 1200w"
+             sizes="(min-width: 1280px) 68vw, 100vw" width="1774" height="767" fetchpriority="high" decoding="async"
+             alt="The B&amp;B Tours and Travels fleet lined up: a Volvo coach, a Force Traveller tempo traveller, a Toyota Etios sedan, a Toyota Innova Crysta and a Maruti Suzuki Ertiga">
+      </picture>
+    </div>
+
+    <div class="shell hero__inner">
+      <p class="hero__eyebrow anim" data-anim="1">
+        <span class="rule" aria-hidden="true"></span>Calicut &middot; Kozhikode &middot; All Kerala
+      </p>
+
+      <h1 id="hero-title" class="hero__title">
+        <span class="anim" data-anim="2">Kerala, driven</span>
+        <span class="anim" data-anim="3"><em>on your own time.</em></span>
+      </h1>
+
+      <p class="hero__lede anim" data-anim="4">
+        Taxi service, airport transfers and holiday packages from Calicut — with
+        experienced local drivers and a fare agreed before you set off.
+      </p>
+
+      <div class="hero__actions anim" data-anim="5">
+        <a class="btn btn--gold btn--lg" href="tel:+919895451666">
+          <svg class="icon" width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.58 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.46.57 3.6a1 1 0 0 1-.25 1z"/></svg>
+          <span>+91 98954 51666</span>
+        </a>
+        <a class="btn btn--outline btn--lg" href="https://wa.me/919895451666" rel="noopener">
+          <svg class="icon" width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2m0 2a8 8 0 1 1-4.1 14.9l-.3-.2-2.6.7.7-2.5-.2-.3A8 8 0 0 1 12 4m-3 4c-.2 0-.5.1-.7.4-.3.3-.9.9-.9 2.1s1 2.5 1.1 2.6c.1.2 1.8 2.9 4.5 4 .6.2 1.1.4 1.5.5.6.2 1.2.2 1.6.1.5-.1 1.5-.6 1.7-1.2s.2-1.1.2-1.2l-.5-.3-1.7-.8c-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.6 6.6 0 0 1-3.3-2.9c-.1-.2 0-.4.1-.5l.4-.5.3-.5v-.5l-.7-1.7c-.2-.5-.4-.4-.6-.4z"/></svg>
+          <span>WhatsApp</span>
+        </a>
+      </div>
+    </div>
+
+    <a class="hero__scroll anim" data-anim="6" href="#booking">
+      <span class="hero__scroll-line" aria-hidden="true"></span>
+      <span>Book a ride</span>
+    </a>
+  </section>
+
+  <!-- ========================= STATS BAND ========================= -->
+  <section class="stats" aria-label="At a glance">
+    <div class="shell stats__grid">
+      <div class="stat reveal">
+        <span class="stat__num"><span data-count="24">24</span>/7</span>
+        <span class="stat__label">Available, every day</span>
+      </div>
+      <div class="stat reveal">
+        <span class="stat__num"><span data-count="7">7</span></span>
+        <span class="stat__label">Services on one number</span>
+      </div>
+      <div class="stat reveal">
+        <span class="stat__num"><span data-count="14">14</span></span>
+        <span class="stat__label">Kerala districts covered</span>
+      </div>
+      <div class="stat reveal">
+        <span class="stat__num"><span data-count="5">5</span></span>
+        <span class="stat__label">Vehicles, sedan to coach</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================= BOOKING ========================= -->
+  <section class="band band--dark booking" id="booking" aria-labelledby="booking-title">
+    <div class="shell booking__grid">
+      <div class="booking__intro reveal">
+        <p class="eyebrow"><span class="rule" aria-hidden="true"></span>Reserve</p>
+        <h2 id="booking-title" class="display">Request a booking</h2>
+        <p class="lede">
+          Fill this in and it opens WhatsApp with your trip details ready to send.
+          We reply with the right car and a fixed fare. Prefer to talk? Just call.
+        </p>
+        <ul class="ticklist" role="list">
+          <li>No payment taken online</li>
+          <li>Fare confirmed before the trip</li>
+          <li>Driver details shared in advance</li>
+        </ul>
+      </div>
+
+      <form class="booking__form reveal" id="booking-form" novalidate>
+        <div class="field">
+          <label for="bf-name">Your name</label>
+          <input type="text" id="bf-name" name="name" autocomplete="name" required>
+        </div>
+        <div class="field">
+          <label for="bf-phone">Phone number</label>
+          <input type="tel" id="bf-phone" name="phone" autocomplete="tel" inputmode="tel" required>
+        </div>
+        <div class="field">
+          <label for="bf-from">Pickup location</label>
+          <input type="text" id="bf-from" name="from" autocomplete="off" required>
+        </div>
+        <div class="field">
+          <label for="bf-to">Drop location</label>
+          <input type="text" id="bf-to" name="to" autocomplete="off" required>
+        </div>
+        <div class="field field--full">
+          <label for="bf-date">Date</label>
+          <input type="date" id="bf-date" name="date">
+        </div>
+
+        <p class="field field--full form-error" id="booking-error" role="alert" hidden></p>
+
+        <div class="field field--full">
+          <button type="submit" class="btn btn--gold btn--lg btn--block">
+            <svg class="icon" width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2m0 2a8 8 0 1 1-4.1 14.9l-.3-.2-2.6.7.7-2.5-.2-.3A8 8 0 0 1 12 4m-3 4c-.2 0-.5.1-.7.4-.3.3-.9.9-.9 2.1s1 2.5 1.1 2.6c.1.2 1.8 2.9 4.5 4 .6.2 1.1.4 1.5.5.6.2 1.2.2 1.6.1.5-.1 1.5-.6 1.7-1.2s.2-1.1.2-1.2l-.5-.3-1.7-.8c-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.6 6.6 0 0 1-3.3-2.9c-.1-.2 0-.4.1-.5l.4-.5.3-.5v-.5l-.7-1.7c-.2-.5-.4-.4-.6-.4z"/></svg>
+            <span>Send on WhatsApp</span>
+          </button>
+          <noscript>
+            <p class="form-note">This form needs JavaScript. Please call +91 98954 51666 instead.</p>
+          </noscript>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- ========================= SERVICES ========================= -->
+  <section class="band band--cream" id="services" aria-labelledby="services-title">
+    <div class="shell">
+      <header class="band__head">
+        <p class="eyebrow"><span class="rule" aria-hidden="true"></span>What we do</p>
+        <h2 id="services-title" class="display">Seven services, <br>one number.</h2>
+        <p class="lede">From a ten-minute hop across Calicut to a week around Kerala — same drivers, same standard.</p>
+      </header>
+
+      <ul class="svc" role="list">
+        <li class="svc__item reveal">
+          <span class="svc__no" aria-hidden="true">01</span>
+          <div class="svc__body">
+            <h3>Taxi service</h3>
+            <p>Point-to-point rides anywhere in Calicut and across Kozhikode district, on call from early morning to late night.</p>
+          </div>
+        </li>
+        <li class="svc__item reveal">
+          <span class="svc__no" aria-hidden="true">02</span>
+          <div class="svc__body">
+            <h3>Holiday packages</h3>
+            <p>Multi-day Kerala itineraries — hills, backwaters and beaches — with the same driver throughout.</p>
+          </div>
+        </li>
+        <li class="svc__item reveal">
+          <span class="svc__no" aria-hidden="true">03</span>
+          <div class="svc__body">
+            <h3>Airport transfers</h3>
+            <p>Pickups and drops at Calicut International Airport, Karipur — timed to your flight, including odd-hour arrivals.</p>
+          </div>
+        </li>
+        <li class="svc__item reveal">
+          <span class="svc__no" aria-hidden="true">04</span>
+          <div class="svc__body">
+            <h3>Railway station transfers</h3>
+            <p>Kozhikode Railway Station, Vadakara and Tirur — the driver waits at the platform end for your train.</p>
+          </div>
+        </li>
+        <li class="svc__item reveal">
+          <span class="svc__no" aria-hidden="true">05</span>
+          <div class="svc__body">
+            <h3>Outstation trips</h3>
+            <p>Wayanad, Ooty, Mysuru, Munnar, Kochi — one-way or return, single day or several.</p>
+          </div>
+        </li>
+        <li class="svc__item reveal">
+          <span class="svc__no" aria-hidden="true">06</span>
+          <div class="svc__body">
+            <h3>Intercity trips</h3>
+            <p>Calicut to Kochi, Coimbatore, Bengaluru and back — comfortable long-distance driving.</p>
+          </div>
+        </li>
+        <li class="svc__item reveal">
+          <span class="svc__no" aria-hidden="true">07</span>
+          <div class="svc__body">
+            <h3>Corporate taxi services</h3>
+            <p>Staff commutes, client pickups and guest transfers on per-trip or monthly-invoiced contracts.</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ========================= FLEET ========================= -->
+  <section class="band band--dark" id="fleet" aria-labelledby="fleet-title">
+    <div class="shell">
+      <header class="band__head">
+        <p class="eyebrow"><span class="rule" aria-hidden="true"></span>The cars</p>
+        <h2 id="fleet-title" class="display">Our fleet</h2>
+        <p class="lede">Five vehicles, from a four-seat sedan up to a full coach — serviced on schedule and cleaned before every trip.</p>
+      </header>
+
+      <ul class="fleet" role="list" tabindex="0" aria-label="Fleet vehicles, scrollable">
+        <li class="car">
+          <div class="car__media">
+            <picture>
+              <source type="image/webp" sizes="(min-width: 1024px) 360px, (min-width: 640px) 44vw, 82vw"
+                      srcset="assets/img/fleet-etios-400.webp 400w, assets/img/fleet-etios-800.webp 800w, assets/img/fleet-etios-1200.webp 1200w">
+              <img class="car__img" src="assets/img/fleet-etios-800.jpg"
+                   srcset="assets/img/fleet-etios-400.jpg 400w, assets/img/fleet-etios-800.jpg 800w, assets/img/fleet-etios-1200.jpg 1200w"
+                   sizes="(min-width: 1024px) 360px, (min-width: 640px) 44vw, 82vw"
+                   width="1200" height="800" loading="lazy" decoding="async"
+                   alt="White Toyota Etios sedan from the B&amp;B Tours and Travels fleet, front view">
+            </picture>
+          </div>
+          <div class="car__body">
+            <h3>Toyota Etios</h3>
+            <p class="car__type">Sedan</p>
+            <dl class="spec">
+              <div><dt>Seats</dt><dd>4 passengers</dd></div>
+              <div><dt>Luggage</dt><dd>2 large bags</dd></div>
+              <div><dt>Best for</dt><dd>Airport runs, city trips</dd></div>
+            </dl>
+          </div>
+        </li>
+
+        <li class="car">
+          <div class="car__media">
+            <picture>
+              <source type="image/webp" sizes="(min-width: 1024px) 360px, (min-width: 640px) 44vw, 82vw"
+                      srcset="assets/img/fleet-ertiga-400.webp 400w, assets/img/fleet-ertiga-800.webp 800w, assets/img/fleet-ertiga-1200.webp 1200w">
+              <img class="car__img" src="assets/img/fleet-ertiga-800.jpg"
+                   srcset="assets/img/fleet-ertiga-400.jpg 400w, assets/img/fleet-ertiga-800.jpg 800w, assets/img/fleet-ertiga-1200.jpg 1200w"
+                   sizes="(min-width: 1024px) 360px, (min-width: 640px) 44vw, 82vw"
+                   width="1200" height="800" loading="lazy" decoding="async"
+                   alt="White Maruti Suzuki Ertiga seven-seater from the B&amp;B Tours and Travels fleet">
+            </picture>
+          </div>
+          <div class="car__body">
+            <h3>Maruti Suzuki Ertiga</h3>
+            <p class="car__type">MPV &middot; 7 seater</p>
+            <dl class="spec">
+              <div><dt>Seats</dt><dd>7 passengers</dd></div>
+              <div><dt>Luggage</dt><dd>4 bags (5 seats up)</dd></div>
+              <div><dt>Best for</dt><dd>Families, group tours</dd></div>
+            </dl>
+          </div>
+        </li>
+
+        <li class="car">
+          <div class="car__media">
+            <picture>
+              <source type="image/webp" sizes="(min-width: 1024px) 360px, (min-width: 640px) 44vw, 82vw"
+                      srcset="assets/img/fleet-crysta-400.webp 400w, assets/img/fleet-crysta-800.webp 800w, assets/img/fleet-crysta-1200.webp 1200w">
+              <img class="car__img" src="assets/img/fleet-crysta-800.jpg"
+                   srcset="assets/img/fleet-crysta-400.jpg 400w, assets/img/fleet-crysta-800.jpg 800w, assets/img/fleet-crysta-1200.jpg 1200w"
+                   sizes="(min-width: 1024px) 360px, (min-width: 640px) 44vw, 82vw"
+                   width="1200" height="800" loading="lazy" decoding="async"
+                   alt="White Toyota Innova Crysta seven-seater from the B&amp;B Tours and Travels fleet">
+            </picture>
+          </div>
+          <div class="car__body">
+            <h3>Toyota Innova Crysta</h3>
+            <p class="car__type">MPV &middot; 7 seater</p>
+            <dl class="spec">
+              <div><dt>Seats</dt><dd>7 passengers</dd></div>
+              <div><dt>Luggage</dt><dd>4 large bags</dd></div>
+              <div><dt>Best for</dt><dd>Outstation, corporate</dd></div>
+            </dl>
+          </div>
+        </li>
+
+        <li class="car">
+          <div class="car__media">
+            <picture>
+              <source type="image/webp" sizes="(min-width: 1024px) 360px, (min-width: 640px) 44vw, 82vw"
+                      srcset="assets/img/fleet-traveller-400.webp 400w, assets/img/fleet-traveller-800.webp 800w, assets/img/fleet-traveller-1200.webp 1200w">
+              <img class="car__img" src="assets/img/fleet-traveller-800.jpg"
+                   srcset="assets/img/fleet-traveller-400.jpg 400w, assets/img/fleet-traveller-800.jpg 800w, assets/img/fleet-traveller-1200.jpg 1200w"
+                   sizes="(min-width: 1024px) 360px, (min-width: 640px) 44vw, 82vw"
+                   width="1200" height="800" loading="lazy" decoding="async"
+                   alt="White Force Traveller high-roof tempo traveller from the B&amp;B Tours and Travels fleet">
+            </picture>
+          </div>
+          <div class="car__body">
+            <h3>Force Traveller</h3>
+            <p class="car__type">Tempo traveller</p>
+            <dl class="spec">
+              <div><dt>Seats</dt><dd>12&ndash;17 passengers</dd></div>
+              <div><dt>Luggage</dt><dd>Rear luggage bay</dd></div>
+              <div><dt>Best for</dt><dd>Group trips, pilgrimages</dd></div>
+            </dl>
+          </div>
+        </li>
+
+        <li class="car">
+          <div class="car__media">
+            <picture>
+              <source type="image/webp" sizes="(min-width: 1024px) 360px, (min-width: 640px) 44vw, 82vw"
+                      srcset="assets/img/fleet-coach-400.webp 400w, assets/img/fleet-coach-800.webp 800w, assets/img/fleet-coach-1200.webp 1200w">
+              <img class="car__img" src="assets/img/fleet-coach-800.jpg"
+                   srcset="assets/img/fleet-coach-400.jpg 400w, assets/img/fleet-coach-800.jpg 800w, assets/img/fleet-coach-1200.jpg 1200w"
+                   sizes="(min-width: 1024px) 360px, (min-width: 640px) 44vw, 82vw"
+                   width="1200" height="800" loading="lazy" decoding="async"
+                   alt="White Volvo touring coach from the B&amp;B Tours and Travels fleet">
+            </picture>
+          </div>
+          <div class="car__body">
+            <h3>Volvo coach</h3>
+            <p class="car__type">Coach</p>
+            <dl class="spec">
+              <div><dt>Seats</dt><dd>45 passengers</dd></div>
+              <div><dt>Luggage</dt><dd>Underfloor hold</dd></div>
+              <div><dt>Best for</dt><dd>Large groups, long tours</dd></div>
+            </dl>
+          </div>
+        </li>
+      </ul>
+
+      <div class="fleet__rail" id="fleet-rail" aria-hidden="true" hidden>
+        <span class="fleet__rail-bar"></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================= WHY US ========================= -->
+  <section class="band band--cream why" id="why-us" aria-labelledby="why-title">
+    <div class="shell why__grid">
+      <div class="why__lead">
+        <p class="eyebrow"><span class="rule" aria-hidden="true"></span>Why B&amp;B</p>
+        <h2 id="why-title" class="display">A taxi you can<br>plan around.</h2>
+        <p class="lede">
+          Most of our work comes from repeat customers and word of mouth. That only
+          happens when the car turns up when it should and the fare is what we said.
+        </p>
+        <figure class="why__figure reveal">
+          <picture>
+            <source type="image/webp" sizes="(min-width: 1024px) 460px, 90vw"
+                    srcset="assets/img/about-fleet-yard-600.webp 600w, assets/img/about-fleet-yard-1000.webp 1000w">
+            <img src="assets/img/about-fleet-yard-600.jpg"
+                 srcset="assets/img/about-fleet-yard-600.jpg 600w, assets/img/about-fleet-yard-1000.jpg 1000w"
+                 sizes="(min-width: 1024px) 460px, 90vw"
+                 width="600" height="400" loading="lazy" decoding="async"
+                 alt="B&amp;B Tours and Travels cars parked at a hill station homestay in Kerala">
+          </picture>
+        </figure>
+      </div>
+
+      <ul class="why__list" role="list">
+        <li class="why__item reveal"><h3>On time, every time</h3><p>The driver leaves early enough to absorb Calicut traffic. For flights and trains we build in a buffer.</p></li>
+        <li class="why__item reveal"><h3>Fare agreed before you go</h3><p>You get the number up front. Tolls, parking and permits at actuals — nothing invented at the end.</p></li>
+        <li class="why__item reveal"><h3>Drivers who know the roads</h3><p>Licensed, experienced and local. They know the ghat roads, the shortcuts and where to stop for a good meal.</p></li>
+        <li class="why__item reveal"><h3>Clean, well-kept cars</h3><p>Serviced on schedule, cleaned inside and out before each trip, air conditioning that actually works.</p></li>
+        <li class="why__item reveal"><h3>Reachable at any hour</h3><p>Calls and WhatsApp messages answered around the clock, including for 3am airport pickups.</p></li>
+        <li class="why__item reveal"><h3>Ready for the long haul</h3><p>All-Kerala and interstate permits in order, so a Bengaluru or Mysuru run is no different to a city trip.</p></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ========================= DESTINATIONS ========================= -->
+  <section class="band band--dark" id="routes" aria-labelledby="routes-title">
+    <div class="shell">
+      <header class="band__head">
+        <p class="eyebrow"><span class="rule" aria-hidden="true"></span>Where we drive</p>
+        <h2 id="routes-title" class="display">Destinations<br>&amp; popular routes</h2>
+        <p class="lede">The trips we run most often. Anywhere not listed, just ask — we almost certainly cover it.</p>
+      </header>
+
+      <ul class="routes" role="list">
+        <li class="route reveal"><span class="route__no" aria-hidden="true">01</span><h3>Calicut Airport &rarr; Kozhikode city</h3><p>Karipur pickups and drops to Mavoor Road, Beach Road, Feroke and everywhere between.</p><p class="route__meta">Approx. 1 hr &middot; sedan or Ertiga</p></li>
+        <li class="route reveal"><span class="route__no" aria-hidden="true">02</span><h3>Calicut &rarr; Wayanad</h3><p>Up the Thamarassery ghat to Kalpetta, Vythiri and Meppadi, with viewpoint stops on the way.</p><p class="route__meta">Approx. 2 hrs 30 min &middot; day trip or 2N</p></li>
+        <li class="route reveal"><span class="route__no" aria-hidden="true">03</span><h3>Calicut &rarr; Ooty</h3><p>Through Gudalur into the Nilgiris — tea gardens, lake and botanical garden.</p><p class="route__meta">Approx. 4 hrs 30 min &middot; 2N package</p></li>
+        <li class="route reveal"><span class="route__no" aria-hidden="true">04</span><h3>Calicut &rarr; Kochi</h3><p>Straight down the highway for flights, meetings or a backwater connection.</p><p class="route__meta">Approx. 4 hrs 30 min &middot; one-way or return</p></li>
+        <li class="route reveal"><span class="route__no" aria-hidden="true">05</span><h3>Calicut &rarr; Kannur &amp; Bekal</h3><p>North Kerala coast run — Muzhappilangad drive-in beach and Bekal fort.</p><p class="route__meta">Approx. 2 to 3 hrs 30 min &middot; day trip</p></li>
+        <li class="route reveal"><span class="route__no" aria-hidden="true">06</span><h3>Calicut &rarr; Mysuru</h3><p>Interstate drive through the Nilambur or Wayanad route, permits already in order.</p><p class="route__meta">Approx. 5 hrs &middot; one-way or return</p></li>
+        <li class="route reveal"><span class="route__no" aria-hidden="true">07</span><h3>Calicut &rarr; Coimbatore</h3><p>Over the Palakkad gap for flights, hospitals and business trips.</p><p class="route__meta">Approx. 4 hrs 30 min &middot; one-way or return</p></li>
+        <li class="route reveal"><span class="route__no" aria-hidden="true">08</span><h3>Calicut &rarr; Bengaluru</h3><p>Long-distance overnight or daytime drive with planned rest breaks.</p><p class="route__meta">Approx. 8 hrs &middot; one-way or return</p></li>
+      </ul>
+
+      <p class="routes__cta reveal">
+        Planning something longer? <a href="#booking">Send us the itinerary</a> and we will quote the whole trip.
+      </p>
+    </div>
+
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span class="marquee__set">Calicut &middot; Kozhikode &middot; Karipur Airport &middot; Vadakara &middot; Koyilandy &middot; Feroke &middot; Wayanad &middot; Kalpetta &middot; Kannur &middot; Bekal &middot; Malappuram &middot; Nilambur &middot; Thrissur &middot; Kochi &middot; Munnar &middot; Ooty &middot; Mysuru &middot; Coimbatore &middot; Bengaluru &middot;&nbsp;</span>
+        <span class="marquee__set">Calicut &middot; Kozhikode &middot; Karipur Airport &middot; Vadakara &middot; Koyilandy &middot; Feroke &middot; Wayanad &middot; Kalpetta &middot; Kannur &middot; Bekal &middot; Malappuram &middot; Nilambur &middot; Thrissur &middot; Kochi &middot; Munnar &middot; Ooty &middot; Mysuru &middot; Coimbatore &middot; Bengaluru &middot;&nbsp;</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================= TOURS ========================= -->
+  <section class="band band--cream tours" id="tours" aria-labelledby="tours-title">
+    <div class="shell">
+      <header class="band__head">
+        <p class="eyebrow"><span class="rule" aria-hidden="true"></span>Places we have travelled</p>
+        <h2 id="tours-title" class="display">Tour packages</h2>
+        <p class="lede">Trips we run again and again, with the stops our regulars ask for. Mix and match, or tell us the days you have and we will build the route.</p>
+      </header>
+
+      <ul class="tours__grid" role="list">
+        <li class="dest reveal">
+          <div class="dest__media">
+            <picture>
+              <source type="image/webp" sizes="(min-width: 1024px) 380px, (min-width: 640px) 45vw, 82vw"
+                      srcset="assets/img/dest-kodaikanal-400.webp 400w, assets/img/dest-kodaikanal-800.webp 800w, assets/img/dest-kodaikanal-1200.webp 1200w">
+              <img class="dest__img" src="assets/img/dest-kodaikanal-800.jpg"
+                   srcset="assets/img/dest-kodaikanal-400.jpg 400w, assets/img/dest-kodaikanal-800.jpg 800w, assets/img/dest-kodaikanal-1200.jpg 1200w"
+                   sizes="(min-width: 1024px) 380px, (min-width: 640px) 45vw, 82vw"
+                   width="1200" height="800" decoding="async" alt="Pillar Rocks rising above the forest at Kodaikanal">
+            </picture>
+            <span class="dest__count">10 stops</span>
+            <div class="dest__head">
+              <p class="dest__meta">Tamil Nadu &middot; hill station</p>
+              <h3>Kodaikanal</h3>
+            </div>
+          </div>
+          <div class="dest__body">
+            <p class="dest__blurb">Lake, cliffs and pine forest at 2,100 m — the classic Nilgiris-side hill break.</p>
+            <ul class="dest__places" role="list">
+                <li>Kodaikanal lake</li>
+                <li>Upper lake view point</li>
+                <li>Coaker's Walk</li>
+                <li>Pillar Rock view</li>
+                <li>Dolphin nose trek</li>
+                <li>Vattakanal waterfall</li>
+                <li>Guna cave</li>
+                <li>Pine forest</li>
+                <li>Moir point</li>
+                <li>Poomparai village</li>
+            </ul>
+          </div>
+        </li>
+        <li class="dest reveal">
+          <div class="dest__media">
+            <picture>
+              <source type="image/webp" sizes="(min-width: 1024px) 380px, (min-width: 640px) 45vw, 82vw"
+                      srcset="assets/img/dest-coorg-400.webp 400w, assets/img/dest-coorg-800.webp 800w, assets/img/dest-coorg-1200.webp 1200w">
+              <img class="dest__img" src="assets/img/dest-coorg-800.jpg"
+                   srcset="assets/img/dest-coorg-400.jpg 400w, assets/img/dest-coorg-800.jpg 800w, assets/img/dest-coorg-1200.jpg 1200w"
+                   sizes="(min-width: 1024px) 380px, (min-width: 640px) 45vw, 82vw"
+                   width="1200" height="800" decoding="async" alt="Abbey Falls in full flow near Madikeri, Coorg">
+            </picture>
+            <span class="dest__count">9 stops</span>
+            <div class="dest__head">
+              <p class="dest__meta">Karnataka &middot; coffee country</p>
+              <h3>Coorg</h3>
+            </div>
+          </div>
+          <div class="dest__body">
+            <p class="dest__blurb">Waterfalls, coffee estates and off-road ridges through Kodagu.</p>
+            <ul class="dest__places" role="list">
+                <li>Abbey waterfall</li>
+                <li>Mandalpatti off-road</li>
+                <li>Golden Temple</li>
+                <li>Dubare elephant camp</li>
+                <li>Nisargadhama island</li>
+                <li>Nagarhole National Park</li>
+                <li>Raja's Seat (sunset)</li>
+                <li>Iruppu falls</li>
+                <li>Tadiandamol peak</li>
+            </ul>
+          </div>
+        </li>
+        <li class="dest reveal">
+          <div class="dest__media">
+            <picture>
+              <source type="image/webp" sizes="(min-width: 1024px) 380px, (min-width: 640px) 45vw, 82vw"
+                      srcset="assets/img/dest-ooty-400.webp 400w, assets/img/dest-ooty-800.webp 800w, assets/img/dest-ooty-1200.webp 1200w">
+              <img class="dest__img" src="assets/img/dest-ooty-800.jpg"
+                   srcset="assets/img/dest-ooty-400.jpg 400w, assets/img/dest-ooty-800.jpg 800w, assets/img/dest-ooty-1200.jpg 1200w"
+                   sizes="(min-width: 1024px) 380px, (min-width: 640px) 45vw, 82vw"
+                   width="1200" height="800" loading="lazy" decoding="async" alt="A boat crossing Pykara Lake in the Nilgiris near Ooty">
+            </picture>
+            <span class="dest__count">8 stops</span>
+            <div class="dest__head">
+              <p class="dest__meta">Tamil Nadu &middot; the Nilgiris</p>
+              <h3>Ooty</h3>
+            </div>
+          </div>
+          <div class="dest__body">
+            <p class="dest__blurb">Gardens, peaks and the toy train through the blue mountains.</p>
+            <ul class="dest__places" role="list">
+                <li>Botanical garden</li>
+                <li>Karnataka park</li>
+                <li>Rose garden</li>
+                <li>Doddabetta peak</li>
+                <li>Pykara lake</li>
+                <li>Pykara dam</li>
+                <li>Coonoor train</li>
+                <li>Shooting point</li>
+            </ul>
+          </div>
+        </li>
+        <li class="dest reveal">
+          <div class="dest__media">
+            <picture>
+              <source type="image/webp" sizes="(min-width: 1024px) 380px, (min-width: 640px) 45vw, 82vw"
+                      srcset="assets/img/dest-munnar-400.webp 400w, assets/img/dest-munnar-800.webp 800w, assets/img/dest-munnar-1200.webp 1200w">
+              <img class="dest__img" src="assets/img/dest-munnar-800.jpg"
+                   srcset="assets/img/dest-munnar-400.jpg 400w, assets/img/dest-munnar-800.jpg 800w, assets/img/dest-munnar-1200.jpg 1200w"
+                   sizes="(min-width: 1024px) 380px, (min-width: 640px) 45vw, 82vw"
+                   width="1200" height="800" loading="lazy" decoding="async" alt="Sunrise over the tea plantations and ranges at Munnar">
+            </picture>
+            <span class="dest__count">10 stops</span>
+            <div class="dest__head">
+              <p class="dest__meta">Kerala &middot; tea hills</p>
+              <h3>Munnar</h3>
+            </div>
+          </div>
+          <div class="dest__body">
+            <p class="dest__blurb">Tea slopes, dams and waterfalls on the road up from Kochi.</p>
+            <ul class="dest__places" role="list">
+                <li>Cheeyappara waterfall</li>
+                <li>Valara waterfall</li>
+                <li>Eravikulam park</li>
+                <li>KDHP tea museum</li>
+                <li>Photo point</li>
+                <li>Mattupetty dam</li>
+                <li>Echo point</li>
+                <li>Kundala dam</li>
+                <li>Elephant safari</li>
+                <li>Kolukkumalai view point</li>
+            </ul>
+          </div>
+        </li>
+        <li class="dest reveal">
+          <div class="dest__media">
+            <picture>
+              <source type="image/webp" sizes="(min-width: 1024px) 380px, (min-width: 640px) 45vw, 82vw"
+                      srcset="assets/img/dest-alleppey-400.webp 400w, assets/img/dest-alleppey-800.webp 800w, assets/img/dest-alleppey-1200.webp 1200w">
+              <img class="dest__img" src="assets/img/dest-alleppey-800.jpg"
+                   srcset="assets/img/dest-alleppey-400.jpg 400w, assets/img/dest-alleppey-800.jpg 800w, assets/img/dest-alleppey-1200.jpg 1200w"
+                   sizes="(min-width: 1024px) 380px, (min-width: 640px) 45vw, 82vw"
+                   width="1200" height="800" loading="lazy" decoding="async" alt="A traditional houseboat on the Alappuzha backwaters">
+            </picture>
+            <span class="dest__count">6 stops</span>
+            <div class="dest__head">
+              <p class="dest__meta">Kerala &middot; the backwaters</p>
+              <h3>Alleppey</h3>
+            </div>
+          </div>
+          <div class="dest__body">
+            <p class="dest__blurb">A night on a houseboat, beaches and temple towns on the coast.</p>
+            <ul class="dest__places" role="list">
+                <li>House boat</li>
+                <li>Marari beach</li>
+                <li>Light house</li>
+                <li>Ambalappuzha temple</li>
+                <li>Krishnapuram palace</li>
+                <li>Explore the backwaters</li>
+            </ul>
+          </div>
+        </li>
+        <li class="dest reveal">
+          <div class="dest__media">
+            <picture>
+              <source type="image/webp" sizes="(min-width: 1024px) 380px, (min-width: 640px) 45vw, 82vw"
+                      srcset="assets/img/dest-thekkady-400.webp 400w, assets/img/dest-thekkady-800.webp 800w, assets/img/dest-thekkady-1200.webp 1200w">
+              <img class="dest__img" src="assets/img/dest-thekkady-800.jpg"
+                   srcset="assets/img/dest-thekkady-400.jpg 400w, assets/img/dest-thekkady-800.jpg 800w, assets/img/dest-thekkady-1200.jpg 1200w"
+                   sizes="(min-width: 1024px) 380px, (min-width: 640px) 45vw, 82vw"
+                   width="1200" height="800" loading="lazy" decoding="async" alt="Boats on Periyar Lake at Thekkady, Periyar Tiger Reserve">
+            </picture>
+            <span class="dest__count">6 stops</span>
+            <div class="dest__head">
+              <p class="dest__meta">Kerala &middot; Periyar reserve</p>
+              <h3>Thekkady</h3>
+            </div>
+          </div>
+          <div class="dest__body">
+            <p class="dest__blurb">Spice gardens, kalari and a boat trip across Periyar lake.</p>
+            <ul class="dest__places" role="list">
+                <li>Periyar National Park</li>
+                <li>Elephant junction</li>
+                <li>Thekkady rose park</li>
+                <li>Kadathanadan kalari</li>
+                <li>Ayurvedic spice garden</li>
+                <li>Pandikuzhi view point</li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+
+      <p class="tours__cta reveal">
+        Want one of these? <a href="#booking">Send us your dates</a> and we will quote the full package.
+      </p>
+
+      <!-- Photo credits (Wikimedia Commons). NOTE: these images are CC BY / CC BY-SA,
+           which require visible attribution. This comment does not satisfy that.
+           Kodaikanal - Rainer Halama (CC BY-SA 4.0)
+           Coorg - Ashwinstein (CC BY-SA 4.0)
+           Ooty - Timothy A. Gonsalves (CC BY-SA 4.0)
+           Munnar - LiteraryDP (CC BY-SA 4.0)
+           Alleppey - Ingo Mehling (CC BY-SA 4.0)
+           Thekkady - Hari K Patibanda (CC BY 2.0) -->
+    </div>
+  </section>
+
+  <!-- ========================= REVIEWS ========================= -->
+  <section class="band band--cream" id="reviews" aria-labelledby="reviews-title" data-reviews>
+    <div class="shell">
+      <header class="band__head">
+        <p class="eyebrow"><span class="rule" aria-hidden="true"></span>Straight from Google</p>
+        <h2 id="reviews-title" class="display">What our<br>customers say</h2>
+        <p class="lede" id="reviews-summary"><!-- REVIEWS_SUMMARY:START -->Reviews from our Google Business Profile.<!-- REVIEWS_SUMMARY:END --></p>
+      </header>
+
+      <!-- The block between REVIEWS:START and REVIEWS:END is written by
+           tools/fetch-reviews.mjs. Do not edit it by hand — your changes will
+           be overwritten on the next scheduled run. -->
+      <!-- REVIEWS:START -->
+      <div class="reviews__status" id="reviews-status" role="status" aria-live="polite">
+        <p>Loading reviews from Google…</p>
+      </div>
+
+      <ul class="reviews" id="reviews-list" role="list" hidden></ul>
+      <!-- REVIEWS:END -->
+
+      <p class="reviews__cta">
+        <a class="btn btn--outline-dark" id="reviews-link" href="https://maps.google.com/?cid=14764489828184109463" rel="noopener">
+          Read all reviews on Google
+        </a>
+      </p>
+    </div>
+  </section>
+
+  <!-- ========================= CONTACT ========================= -->
+  <section class="band band--dark contact" id="contact" aria-labelledby="contact-title">
+    <div class="shell contact__grid">
+      <div class="contact__info">
+        <p class="eyebrow"><span class="rule" aria-hidden="true"></span>Get in touch</p>
+        <h2 id="contact-title" class="display">Book your ride</h2>
+        <p class="lede">
+          Call any time of day or night, or send the details on WhatsApp and we
+          will come back to you with a fare.
+        </p>
+
+        <ul class="contact__list" role="list">
+          <li><span class="contact__k">Phone</span><a class="contact__v" href="tel:+919895451666">+91 98954 51666</a></li>
+          <li><span class="contact__k">WhatsApp</span><a class="contact__v" href="https://wa.me/919895451666" rel="noopener">+91 98954 51666</a></li>
+          <li><span class="contact__k">Email</span><a class="contact__v" href="mailto:bnbtoursandtravels777@gmail.com">bnbtoursandtravels777@gmail.com</a></li>
+          <li><span class="contact__k">Service area</span><span class="contact__v">Calicut, Kozhikode and all Kerala</span></li>
+          <li><span class="contact__k">Hours</span><span class="contact__v">Open 24 hours, all seven days</span></li>
+        </ul>
+
+        <div class="contact__actions">
+          <a class="btn btn--gold btn--lg" href="tel:+919895451666">Call now</a>
+          <a class="btn btn--outline btn--lg" href="https://wa.me/919895451666" rel="noopener">WhatsApp</a>
+        </div>
+      </div>
+
+      <div class="contact__map">
+        <h3 class="contact__map-title">Find us</h3>
+        <!-- cid 14764489828184109463 is this listing's Google Maps id, taken from
+             the ftid in the share link maps.app.goo.gl/QM7mqqBRqgvxz5dm7.
+             Coordinates: 11.25556685, 75.81081545 -->
+        <div class="map" id="map-embed" data-map-src="https://www.google.com/maps?cid=14764489828184109463&amp;output=embed">
+          <!-- JS swaps this for the iframe as the map nears the viewport; it is
+               what a visitor without JavaScript is left with. -->
+          <noscript>
+            <a class="map__load" href="https://maps.google.com/?cid=14764489828184109463" rel="noopener">
+              <span>Open in Google Maps</span>
+              <small>Kozhikode &ndash; Balussery Rd, Ambalathukulangara</small>
+            </a>
+          </noscript>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ========================= FOOTER ========================= -->
+<footer class="footer">
+  <div class="shell footer__grid">
+    <div class="footer__brand">
+      <span class="brand__mark brand__mark--lg" aria-hidden="true">B&amp;B</span>
+      <p class="footer__name">B&amp;B Tours and Travels</p>
+      <p>Taxi service, airport transfers and Kerala holiday packages, run out of Calicut on one promise: turn up on time, charge what was agreed.</p>
+    </div>
+
+    <nav class="footer__col" aria-label="Services">
+      <h2 class="footer__title">Services</h2>
+      <ul role="list">
+        <li><a href="#services">Taxi service</a></li>
+        <li><a href="#services">Airport transfers</a></li>
+        <li><a href="#services">Railway station transfers</a></li>
+        <li><a href="#services">Outstation trips</a></li>
+        <li><a href="#services">Corporate taxi</a></li>
+        <li><a href="#routes">Holiday packages</a></li>
+      </ul>
+    </nav>
+
+    <nav class="footer__col" aria-label="Site">
+      <h2 class="footer__title">Explore</h2>
+      <ul role="list">
+        <li><a href="#fleet">Our fleet</a></li>
+        <li><a href="#tours">Tour packages</a></li>
+        <li><a href="#routes">Destinations</a></li>
+        <li><a href="#reviews">Customer reviews</a></li>
+        <li><a href="#booking">Request a booking</a></li>
+      </ul>
+    </nav>
+
+    <div class="footer__col">
+      <h2 class="footer__title">Contact</h2>
+      <ul role="list">
+        <li><a href="tel:+919895451666">+91 98954 51666</a></li>
+        <li><a href="https://wa.me/919895451666" rel="noopener">WhatsApp us</a></li>
+        <li><a href="mailto:bnbtoursandtravels777@gmail.com">bnbtoursandtravels777@gmail.com</a></li>
+        <li>Calicut, Kozhikode, Kerala</li>
+        <li>Open 24 / 7</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="shell footer__areas">
+    <h2 class="footer__title">Areas we cover</h2>
+    <p>Calicut &middot; Kozhikode &middot; Karipur Airport &middot; Vadakara &middot; Koyilandy &middot; Feroke &middot; Ramanattukara &middot; Wayanad &middot; Kalpetta &middot; Kannur &middot; Bekal &middot; Malappuram &middot; Nilambur &middot; Thrissur &middot; Kochi &middot; Munnar &middot; Ooty &middot; Mysuru &middot; Coimbatore &middot; Bengaluru</p>
+  </div>
+
+  <div class="shell footer__bar">
+    <p>&copy; <span id="year">2026</span> B&amp;B Tours and Travels. All rights reserved.</p>
+    <p>Taxi service &amp; holiday packages in Calicut, Kerala.</p>
+  </div>
+</footer>
+
+<!-- Mobile sticky call bar -->
+<div class="callbar" aria-label="Quick contact">
+  <a class="callbar__btn callbar__btn--call" href="tel:+919895451666">
+    <svg class="icon" width="19" height="19" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.58 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.46.57 3.6a1 1 0 0 1-.25 1z"/></svg>
+    <span>Call now</span>
+  </a>
+  <a class="callbar__btn callbar__btn--wa" href="https://wa.me/919895451666" rel="noopener">
+    <svg class="icon" width="19" height="19" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2m0 2a8 8 0 1 1-4.1 14.9l-.3-.2-2.6.7.7-2.5-.2-.3A8 8 0 0 1 12 4m-3 4c-.2 0-.5.1-.7.4-.3.3-.9.9-.9 2.1s1 2.5 1.1 2.6c.1.2 1.8 2.9 4.5 4 .6.2 1.1.4 1.5.5.6.2 1.2.2 1.6.1.5-.1 1.5-.6 1.7-1.2s.2-1.1.2-1.2l-.5-.3-1.7-.8c-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.6 6.6 0 0 1-3.3-2.9c-.1-.2 0-.4.1-.5l.4-.5.3-.5v-.5l-.7-1.7c-.2-.5-.4-.4-.6-.4z"/></svg>
+    <span>WhatsApp</span>
+  </a>
+</div>
+
+</body>
+</html>

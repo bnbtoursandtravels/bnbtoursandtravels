@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 56" width="256" height="56" role="img" aria-label="B&amp;B Tours and Travel">
+  <title>B&amp;B Tours and Travel</title>
+  <rect x="0.5" y="4.5" width="47" height="47" fill="#0b0c0e" stroke="#4a4a48"/>
+  <text x="24" y="34" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif"
+        font-size="15" font-weight="700" fill="#e0b93b" letter-spacing="-0.4">B&amp;B</text>
+  <g font-family="Georgia, 'Times New Roman', serif">
+    <text x="60" y="28" font-size="18" fill="#0b0c0e">Tours and Travel</text>
+  </g>
+  <text x="61" y="43" font-family="system-ui, -apple-system, Arial, sans-serif"
+        font-size="8" font-weight="600" fill="#56544d" letter-spacing="2.2">CALICUT &middot; ALL KERALA</text>
+</svg>

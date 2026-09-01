@@ -1,0 +1,11 @@
+# Google OAuth credentials — never commit these
+.env
+.env.*
+!.env.example
+
+# Working photo files, not needed on the server
+src-photos/
+clean/
+
+node_modules/
+.DS_Store

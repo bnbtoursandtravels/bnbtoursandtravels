@@ -1,0 +1,7 @@
+/* Loaded only when JavaScript is disabled. Scroll-reveal elements are hidden by
+   default in style.css and revealed by main.js, so without JS they must be
+   forced back to visible. */
+.reveal {
+  opacity: 1;
+  transform: none;
+}

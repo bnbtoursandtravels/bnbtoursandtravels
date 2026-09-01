@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://www.example.com/</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://www.example.com/assets/img/hero-taxi-kerala-1600.jpg</image:loc>
+      <image:title>B&amp;B Tours and Travel taxi beside the Kerala backwaters</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.example.com/assets/img/fleet-etios-800.jpg</image:loc>
+      <image:title>Toyota Etios sedan taxi</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.example.com/assets/img/fleet-ertiga-800.jpg</image:loc>
+      <image:title>Maruti Suzuki Ertiga seven seater taxi</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.example.com/assets/img/fleet-crysta-800.jpg</image:loc>
+      <image:title>Toyota Innova Crysta seven seater taxi</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.example.com/assets/img/fleet-traveller-800.jpg</image:loc>
+      <image:title>Force Traveller tempo traveller</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.example.com/assets/img/fleet-coach-800.jpg</image:loc>
+      <image:title>Volvo touring coach</image:title>
+    </image:image>
+  </url>
+</urlset>
