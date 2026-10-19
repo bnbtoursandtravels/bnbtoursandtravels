@@ -1102,6 +1102,7 @@ body.nav-open { overflow: hidden; }
 .dest.is-visible .dest__places li:nth-child(8) { animation-delay: 316ms; }
 .dest.is-visible .dest__places li:nth-child(9) { animation-delay: 344ms; }
 .dest.is-visible .dest__places li:nth-child(10) { animation-delay: 372ms; }
+.dest.is-visible .dest__places li:nth-child(11) { animation-delay: 400ms; }
 
 .dest:hover { transform: translateY(-6px); box-shadow: 0 18px 40px rgba(26, 26, 25, .15); border-color: rgba(128, 97, 0, .38); }
 .dest:hover .dest__img { transform: scale(1.06); }
